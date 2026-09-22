@@ -49,7 +49,6 @@ The LLM processes the user's natural-language request and extracts:
 
 ### Example Input
 
-```text
 I need a quiet room under ₹5000 with a good view and a large room.
 
 ## 🧠 Fuzzy Logic Component
@@ -104,7 +103,6 @@ The project uses triangular membership functions (`trimf`).
 
 The system uses multiple fuzzy rules to evaluate room suitability.
 
-```text
 IF budget is high
 AND view is high
 AND quietness is high
@@ -136,4 +134,34 @@ User enters hotel requirements
             ↓
       Recommended Room
 
-      
+▶️ How to Run
+1. Clone the repository
+      git clone YOUR_GITHUB_LINK
+2. Open the project folder
+      cd HotelRoomAIAdvisor
+3. Create a virtual environment
+      python -m venv venv
+4. Activate the virtual environment
+      Windows:
+      venv\Scripts\activate
+5. Install the required libraries
+      pip install -r requirements.txt
+6. Add the Groq API key
+      Create a .env file:
+      GROQ_API_KEY=YOUR_API_KEY
+7. Run the application
+      streamlit run app.py
+
+## 🌐 GitHub Repository
+
+**GitHub Repository:**
+
+https://github.com/Saranya2131/HotelRoomAIAdvisor
+
+## 🚀 Deployment
+
+The application is hosted using **Streamlit Community Cloud**.
+
+**Live Application:**
+
+https://hotelroomaiadvisor-6czewqvpsfqqqr77lwgeaj.streamlit.app
