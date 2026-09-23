@@ -147,16 +147,19 @@ Follow these steps to run the Hotel Room AI Advisor on your local system.
 
 1. Clone the Repository
 git clone https://github.com/Saranya2131/HotelRoomAIAdvisor
+
 cd HotelRoomAIAdvisor
 
 3. Create a Virtual Environment
+
 python -m venv venv
-
 Activate the virtual environment on Windows:
-
 venv\Scripts\activate
+
 3. Install Required Libraries
+
 pip install -r requirements.txt
+
 4. Configure the Groq API Key
 
 Create a .env file in the project folder:
@@ -166,11 +169,13 @@ GROQ_API_KEY=your_groq_api_key
 Note: Do not upload the .env file or API key to GitHub. Add .env to .gitignore.
 
 5. Run the Application
+
 streamlit run app.py
 
 The application will open in your browser, usually at:
 
 http://localhost:8501
+
 6. Use the Application
 
 Enter a request such as:
