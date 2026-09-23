@@ -1,6 +1,11 @@
-# 🏨 AI Based Hotel Room Selection Advisor
+ AI Based Hotel Room Selection Advisor
 
-## 📌 Problem Statement
+**Project Description**
+
+Hotel Room AI Advisor is an AI-powered hotel room recommendation system that helps users find a suitable room based on their personal preferences. Users can describe their requirements in natural language, such as budget, preferred view, quietness, and room size.The system uses LangChain and Groq LLM to understand the user's request and extract structured hotel preferences. A Fuzzy Logic-based inference system then evaluates the available rooms using factors such as budget, view, quietness, and space.
+Each room receives a suitability score from 0 to 100, and the system displays room recommendations along with price, rating, and suitability score. The application is developed using Python and Streamlit and provides a simple and interactive interface for hotel room selection.
+
+**Problem Statement**
 
 Choosing a suitable hotel room can be difficult because users may have different requirements such as budget, room view, quietness, and room size.
 
@@ -8,7 +13,7 @@ This project provides an AI-based hotel room selection system where users can de
 
 ---
 
-## 🎯 Objectives
+ **Objectives**
 
 - Understand hotel room requirements written in natural language.
 - Extract user preferences using an AI/LLM.
@@ -20,7 +25,7 @@ This project provides an AI-based hotel room selection system where users can de
 
 ---
 
-## 🛠️ Technologies Used
+ **Technologies Used**
 
 - **Python**
 - **LangChain**
@@ -36,7 +41,7 @@ This project provides an AI-based hotel room selection system where users can de
 
 ---
 
-## 🤖 AI/LLM Component
+ **AI/LLM Component**
 
 The project uses **LangChain with a Groq-hosted Large Language Model (LLM)**.
 
@@ -47,11 +52,11 @@ The LLM processes the user's natural-language request and extracts:
 - Quietness preference
 - Room-space preference
 
-### Example Input
+ Example Input
 
 I need a quiet room under ₹5000 with a good view and a large room.
 
-## 🧠 Fuzzy Logic Component
+**Fuzzy Logic Component**
 
 The project uses a genuine **Fuzzy Inference System** using the `scikit-fuzzy` library.
 
@@ -67,7 +72,7 @@ The final suitability score is calculated on a scale of **0 to 100**.
 
 ---
 
-## 📊 Membership Functions
+**Membership Functions**
 
 The project uses triangular membership functions (`trimf`).
 
@@ -99,7 +104,7 @@ The project uses triangular membership functions (`trimf`).
 
 ---
 
-## 📐 Fuzzy Rules
+**Fuzzy Rules**
 
 The system uses multiple fuzzy rules to evaluate room suitability.
 
@@ -108,7 +113,7 @@ AND view is high
 AND quietness is high
 THEN suitability is excellent
 
-### System WorkFlow
+**System WorkFlow**
 
 User enters hotel requirements
             ↓
@@ -134,31 +139,51 @@ User enters hotel requirements
             ↓
       Recommended Room
 
-▶️ How to Run
-1. Clone the repository
-      git clone https://github.com/Saranya2131/HotelRoomAIAdvisor
-2. Open the project folder
-      cd HotelRoomAIAdvisor
-3. Create a virtual environment
-      python -m venv venv
-4. Activate the virtual environment
-      Windows:
-      venv\Scripts\activate
-5. Install the required libraries
-      pip install -r requirements.txt
-6. Add the Groq API key
-      Create a .env file:
-      GROQ_API_KEY=YOUR_API_KEY
-7. Run the application
-      streamlit run app.py
+ **How to Run**
 
-## 🌐 GitHub Repository
+Installation / Setup
+
+Follow these steps to run the Hotel Room AI Advisor on your local system.
+
+1. Clone the Repository
+git clone https://github.com/Saranya2131/HotelRoomAIAdvisor
+cd HotelRoomAIAdvisor
+
+3. Create a Virtual Environment
+python -m venv venv
+
+Activate the virtual environment on Windows:
+
+venv\Scripts\activate
+3. Install Required Libraries
+pip install -r requirements.txt
+4. Configure the Groq API Key
+
+Create a .env file in the project folder:
+
+GROQ_API_KEY=your_groq_api_key
+
+Note: Do not upload the .env file or API key to GitHub. Add .env to .gitignore.
+
+5. Run the Application
+streamlit run app.py
+
+The application will open in your browser, usually at:
+
+http://localhost:8501
+6. Use the Application
+
+Enter a request such as:
+
+I need a quiet room under ₹5000 with a good view and a large room.
+
+Click Find My Room to view the extracted preferences, room recommendations, suitability scores, and recommended room.
 
 **GitHub Repository:**
 
 https://github.com/Saranya2131/HotelRoomAIAdvisor
 
-## 🚀 Deployment
+ Deployment
 
 The application is hosted using **Streamlit Community Cloud**.
 
