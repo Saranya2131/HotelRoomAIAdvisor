@@ -136,7 +136,7 @@ User enters hotel requirements
 
 ▶️ How to Run
 1. Clone the repository
-      git clone YOUR_GITHUB_LINK
+      git clone https://github.com/Saranya2131/HotelRoomAIAdvisor
 2. Open the project folder
       cd HotelRoomAIAdvisor
 3. Create a virtual environment
